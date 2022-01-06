@@ -35,7 +35,7 @@ class Shadow:
         elif isinstance(driver, InternetExplorerDriver):
             self.session_id = driver.session_id
             self.ie_driver = driver
-        elif isinstance(driver, remote_web_driver):
+        elif isinstance(driver, remote_web_driver.WebDriver):
             self.session_id = driver.session_id
             self.remote_driver = driver
         self.driver = driver
